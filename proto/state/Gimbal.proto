@@ -1,0 +1,18 @@
+//topic:{SerialNumber}/Mobile/State/Gimbal
+syntax = "proto3";
+package protocol.jiushuo.gimbal.V1; 
+option java_package = "com.jskj.mobile.state";
+option java_outer_classname = "ProtoGimbal";
+message Gimbal {
+    enum GimbalMode {
+        FREE = 0;
+        FPV = 1;
+        YAW_FOLLOW = 2;
+        UNKNOWN = 255;
+    }
+    GimbalMode gimbalMode = 1; //云台工作模式
+    float pitch = 2; //俯仰角度
+    float roll = 3;  //滚转角度
+    float yaw = 4;   //偏航角度，相对正北方向
+    int64 timestatmp = 5;
+}

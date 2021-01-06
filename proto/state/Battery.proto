@@ -1,0 +1,12 @@
+//topic:{SerialNumber}/Mobile/State/Battery
+syntax = "proto3";
+package protocol.jiushuo.battery.V1; 
+option java_package = "com.jskj.mobile.state";
+option java_outer_classname = "ProtoBattery";
+message Battery {
+    int32 chargeRemaining = 1; //剩余电量
+    int32 chargeRemainingInPercent = 2; //剩余电量百分比
+    int32 voltage =3; //电压
+    int32 current = 4; //电流
+    int64 timestatmp = 5; //消息时间戳
+}

@@ -1,0 +1,5 @@
+//topic:{SerialNumber}/Mobile/Request/Aircraft
+syntax = "proto3";
+option java_package = "com.jskj.mobile.request";
+option java_outer_classname = "ProtoWaypointMission";
+message WaypointMission {
